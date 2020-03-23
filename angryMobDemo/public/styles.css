@@ -1,0 +1,63 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  font-family: 'Anton', sans-serif;
+  color: purple;
+}
+h1 {
+  font-size: 50px;
+  margin-bottom: 0;
+  font-weight: bold;
+  font-family: 'Anton', sans-serif;
+  background-color: purple;
+  width: 80%;
+  color: white;
+  margin: 50px auto;
+}
+h3 {
+  font-size: 50px;
+  font-family: "Creepster", cursive;
+  text-align: center;
+}
+.headerAndForm p {
+  font-size: 30px;
+  font-family: "Creepster", cursive;
+  color: white;
+}
+.headerAndForm {
+  width: 30%;
+  height: 960px;
+  float: left;
+  text-align: center;
+  background-image: url("angryMobBg.jpg");
+  background-size: cover;
+}
+.header {
+  height: 35%;
+}
+.form {
+  background-color: purple;
+  padding: 2%;
+  width: 75%;
+  margin: 250px auto;
+  margin-bottom: 2%;
+}
+h2 {
+  color: white;
+  font-size: 30px;
+
+}
+.showMessages {
+  width: 70%;
+  height: 960px;
+  float: left;
+  font-size: 25px;
+  padding-left: 4%;
+  font-family: 'Bebas Neue', cursive;
+  background-color: black;
+}
+li {
+  padding: 2px 2%;
+  list-style-type: none;
+}

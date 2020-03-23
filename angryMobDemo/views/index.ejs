@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Angry Mob</title>
+  <link rel="shortcut icon" href="favicon.ico">
+  <link rel="stylesheet" href="font-awesome.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Anton|Bebas+Neue|Creepster|Open+Sans+Condensed:300|Quicksand&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <section class="headerAndForm">
+    <section class="header">
+      <!-- <img src="angryCowboys.jpg" alt="photo of 21 savage's head"> -->
+      <h1>Angry Mob</h1>
+      <p>Pissed off? Express your anger with a fiery complaint.</p>
+    </section>
+    <section class="form">
+      <h2>Leave A Complaint</h2>
+      <form action="/messages" method="POST">
+        <input type="text" placeholder="name" name="name">
+        <input type="text" placeholder="message" name="msg">
+        <button type="submit">Submit</button>
+      </form>
+    </section>
+  </section>
+
+  <section class="showMessages">
+    <h3>Messages</h3>
+    <ul class="messages">
+    <% for(var i=0; i<messages.length; i++) {%>
+      <li class="message">
+        <span><%= messages[i].name %></span>
+        <span><%= messages[i].msg %></span>
+        <span><%= messages[i].thumbUp %></span>
+        <span><i class="fa fa-thumbs-up" aria-hidden="true"></i></span>
+        <span><i class="fa fa-thumbs-down" aria-hidden="true"></i></span>
+        <span><i class="fa fa-trash" aria-hidden="true"></i></span>
+      </li>
+    <% } %>
+    </ul>
+  </section>
+
+  <script src="main.js"></script>
+
+</body>
+</html>
